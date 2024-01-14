@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontaktinė forma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Nunito", sans-serif;
+        font-size: small;
+        color: white;
+
+        background-image: url(images/kontaktine1.png);
+        background-position: center;
+        background-size: cover;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.5;
+        z-index: 1;
+      }
+
+      .container {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 500px;
+      }
+
+      .column {
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 5%;
+      }
+
+      /* Socials container */
+
+      .info-label {
+        font-weight: 900;
+        margin: 0;
+      }
+
+      .info {
+        display: grid;
+        align-content: center;
+      }
+
+      .info-content {
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      .socials {
+        text-align: right;
+      }
+
+      .fab {
+        font-size: 20px;
+        color: rgb(0, 150, 225);
+        margin: 0em 1em;
+      }
+
+      /* Qoute form */
+
+      .form_container {
+        background-color: rgb(22, 22, 22);
+        padding: 1rem 2rem;
+      }
+
+      .qoute-label {
+        font-weight: 400;
+      }
+      form {
+        padding: 0.5rem;
+      }
+      input,
+      textarea {
+        box-sizing: border-box;
+        width: 100%;
+        height: 2rem;
+        margin: 0.5rem 0rem;
+        background-color: rgb(33, 33, 33);
+        color: white;
+        opacity: 0.5;
+        border: 0;
+        padding: 0 1rem;
+        font-family: "Nunito", sans-serif;
+      }
+
+      #email,
+      #phone {
+        width: 49%;
+      }
+      #phone {
+        float: right;
+      }
+      #message {
+        height: 10em;
+        vertical-align: top;
+        padding-top: 0.5rem;
+      }
+
+      #btn-submit {
+        background-color: green;
+        opacity: 100;
+        margin: 0.5rem -0.5rem;
+        width: calc(100% + 1rem);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column info">
+        <h1 class="info-label">Lorem ipsum amet dolor</h1>
+        <p class="info-content">
+          consectetur adipisicing elit. Fugit voluptate consequatur aliquid
+          labore eligendi accusamus illum dolorem recusandae, nesciunt assumenda
+          id quos consequuntur.
+        </p>
+        <div class="socials">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-google"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="border column form_container">
+        <h1 class="qoute-label">Get a qoute</h1>
+        <p>We will get back to you in 24 hours</p>
+        <form>
+          <input type="text" id="fname" name="fname" value="First Name" /><br />
+          <input type="text" id="lname" name="lname" value="Last Name" /><br />
+          <input type="text" id="email" name="email" value="Email" />
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            value="Phone Number"
+          /><br />
+          <textarea rows="10" col="10" id="message" name="user_message">
+Type message here</textarea
+          ><br />
+          <input type="submit" id="btn-submit" value="Get qoute" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- btn tel email -->
+<!-- value -> placeholder -->

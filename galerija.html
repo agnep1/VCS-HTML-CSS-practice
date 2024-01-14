@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        background: #f1f1f1;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        margin: 50px auto;
+        max-width: 1260px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+      }
+
+      li {
+        background-color: white;
+        padding: 10px;
+      }
+
+      li a:visited {
+        background-color: #6c757d;
+      }
+
+      .image {
+        background-color: white;
+      }
+
+      .image :nth-child(2) {
+        font-weight: 600;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#"></a>Show all</li>
+            <li>Nature</li>
+            <li>Cars</li>
+            <li>People</li>
+          </ul>
+        </nav>
+      </header>
+      <div class="gallery">
+        <div class="image">
+          <img
+            src="https://fastly.picsum.photos/id/1025/300/200.jpg?hmac=Cndwice7Ml2dHJI2wd4lnNLppf96nA1LZx1wStLzKFk"
+            alt="Dog with blanket"
+          />
+          <p>Mountain</p>
+          <p>Lorem, ipsum dolor...</p>
+        </div>
+        <div class="image">
+          <img
+            src="https://fastly.picsum.photos/id/21/300/200.jpg?hmac=j7IJnq4Lg2STWGHH6xd35sUZKBh4rqe6cEADEkRLhoI"
+            alt="White heals new to red wall"
+          />
+          <p>Heels</p>
+          <p>Lorem, ipsum dolor...</p>
+        </div>
+        <div class="image">
+          <img
+            src="https://fastly.picsum.photos/id/348/300/200.jpg?hmac=yzm-mkbJxBZX4-skk2K7k9Cp1V99tKTABxjLtUs2nC0"
+            alt="Croud"
+          />
+          <p>Croud</p>
+          <p>Lorem, ipsum dolor...</p>
+        </div>
+        <div class="image">
+          <img
+            src="https://fastly.picsum.photos/id/1041/300/200.jpg?hmac=6ezBGCQFpwkQX8Q2X5IwixcAgYYpqAT-d_4rMaG-bu4"
+            alt="Small wave"
+          />
+          <p>Wave</p>
+          <p>Lorem, ipsum dolor...</p>
+        </div>
+        <div class="image">
+          <img
+            src="https://fastly.picsum.photos/id/387/300/200.jpg?hmac=TArx0KIOtQHXKziVPP19DUyaVMlK5guWsqcGHKSSmCY"
+            alt="Road"
+          />
+          <p>Road</p>
+          <p>Lorem, ipsum dolor...</p>
+        </div>
+        <div class="image">
+          <img
+            src="https://fastly.picsum.photos/id/411/300/200.jpg?hmac=ev1VWFFqewY_uqDLshz8OuswpnW_0jYPN07LYuNvcB4"
+            alt="City skyline"
+          />
+          <p>City skyline</p>
+          <p>Lorem, ipsum dolor...</p>
+        </div>
+        <div class="image">
+          <img
+            src="https://fastly.picsum.photos/id/821/300/200.jpg?hmac=6IKXckQtVXfIh7pRXj7cxezrxH-zM2WAkCAcn2EGZao"
+            alt="Woman waiting metro"
+          />
+          <p>Woman in metro</p>
+          <p>Lorem, ipsum dolor...</p>
+        </div>
+        <div class="image">
+          <img
+            src="https://fastly.picsum.photos/id/177/300/200.jpg?hmac=RtKoXTT4Vh7bmMNVNOoNPc3iKHLb4_gL4k_Kv37P2Vc"
+            alt="Person admiering mountain view"
+          />
+          <p>Person in mountains</p>
+          <p>Lorem, ipsum dolor...</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
