@@ -1,0 +1,169 @@
+:root {
+  --primary: #0982fe;
+  --secondary: #6de1c2;
+  --grey-line: #737b7d;
+  --grey-note: #8e8e8e;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background: url(images/kontaktine3/background_pin_blue.png);
+  display: flex;
+  justify-content: center;
+  height: 100dvh;
+  align-items: center;
+  margin: 0;
+}
+h1 {
+  font-size: 46px;
+  font-weight: 600;
+  letter-spacing: 0.46px;
+  margin-top: 0px;
+}
+h1 span {
+  color: var(--secondary);
+}
+h2 {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 13px;
+}
+
+main {
+  width: 1440px;
+  height: 912px;
+  position: relative;
+
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  padding-left: 95px;
+  padding-right: 95px;
+  padding-top: 51px;
+
+  border-radius: 50px;
+  overflow: hidden;
+}
+#color-block-right {
+  position: absolute;
+  background-color: var(--secondary);
+  width: 419px;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.map {
+  background: url(images/kontaktine3/map.png);
+  width: 556px;
+  height: 809px;
+  position: relative;
+}
+
+.map div {
+  background-color: white;
+  color: var(--primary);
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 600;
+
+  width: 157px;
+  padding-left: 10px;
+
+  border-radius: 10px;
+  position: relative;
+  top: 22px;
+  left: -38px;
+}
+
+.map div span {
+  font-weight: 400;
+}
+#data-part {
+  max-width: 545px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+form input {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--grey-note);
+
+  border: none;
+  border-bottom: var(--grey-line) 1px solid;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  width: 100%;
+}
+form div {
+  display: flex;
+  gap: 24px;
+}
+form div:first-child {
+  width: 70%;
+}
+
+#text-field {
+  border: var(--grey-note) 1px dashed;
+  padding: 40px 16px;
+  color: var(--grey-note);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.attachment-note {
+  line-height: 1.6;
+  color: var(--grey-note);
+}
+
+.consent label {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+button {
+  width: 100%;
+  background-color: var(--primary);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 10px;
+  height: 54px;
+}
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts div {
+  display: flex;
+  gap: 15px;
+  font-weight: 600;
+}
+
+.contacts span {
+  color: #dd5471;
+  font-weight: 400;
+}
