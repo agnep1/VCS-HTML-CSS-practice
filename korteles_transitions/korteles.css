@@ -27,6 +27,8 @@ body {
 main {
   display: flex;
   gap: 5%;
+
+  margin-top: 100px;
 }
 .card {
   height: 300px;
@@ -41,9 +43,10 @@ main {
 }
 
 .image-border {
-  background-color: white;
+  background-color: none;
   border-radius: 50%;
 }
+
 .image {
   width: 120px;
   height: 120px;
@@ -56,6 +59,8 @@ main {
 }
 
 .card:hover {
+  transition: all 1000ms ease-in-out;
+
   border-top-right-radius: 10px;
   position: relative;
   top: -5px;
@@ -69,8 +74,7 @@ main {
 .yellow .image {
   background-color: var(--yellow-li);
 }
-.yellow:hover,
-.yellow:hover .image-border {
+.yellow:hover {
   background-color: var(--yellow);
 }
 
@@ -80,8 +84,7 @@ main {
 .green .image {
   background-color: var(--green-li);
 }
-.green:hover,
-.green:hover .image-border {
+.green:hover {
   background-color: var(--green);
 }
 
@@ -91,8 +94,7 @@ main {
 .purple .image {
   background-color: var(--purple-li);
 }
-.purple:hover,
-.purple:hover .image-border {
+.purple:hover {
   background-color: var(--purple);
 }
 
@@ -102,7 +104,6 @@ main {
 .blue .image {
   background-color: var(--blue-li);
 }
-.blue:hover,
-.blue:hover .image-border {
+.blue:hover {
   background-color: var(--blue);
 }
