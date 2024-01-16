@@ -1,0 +1,108 @@
+:root {
+  --yellow: #ffd861;
+  --yellow-li: #ffeeba;
+  --green: #4bd79b;
+  --green-li: #b8f9d3;
+  --purple: #9b61f9;
+  --purple-li: #ceb2fc;
+  --blue: #5f99fa;
+  --blue-li: #dce9ff;
+
+  --text: #717158;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: #e0e0e0;
+
+  display: flex;
+  justify-content: center;
+}
+main {
+  display: flex;
+  gap: 5%;
+}
+.card {
+  height: 300px;
+  width: 240px;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-border {
+  background-color: white;
+  border-radius: 50%;
+}
+.image {
+  width: 120px;
+  height: 120px;
+  margin: 5px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  border-top-right-radius: 10px;
+  position: relative;
+  top: -5px;
+  right: -5px;
+  box-shadow: -10px 10px 30px rgb(156, 156, 156);
+}
+
+.yellow .image-border {
+  border: 3px var(--yellow-li) solid;
+}
+.yellow .image {
+  background-color: var(--yellow-li);
+}
+.yellow:hover,
+.yellow:hover .image-border {
+  background-color: var(--yellow);
+}
+
+.green .image-border {
+  border: 3px var(--green-li) solid;
+}
+.green .image {
+  background-color: var(--green-li);
+}
+.green:hover,
+.green:hover .image-border {
+  background-color: var(--green);
+}
+
+.purple .image-border {
+  border: 3px var(--purple-li) solid;
+}
+.purple .image {
+  background-color: var(--purple-li);
+}
+.purple:hover,
+.purple:hover .image-border {
+  background-color: var(--purple);
+}
+
+.blue .image-border {
+  border: 3px var(--blue-li) solid;
+}
+.blue .image {
+  background-color: var(--blue-li);
+}
+.blue:hover,
+.blue:hover .image-border {
+  background-color: var(--blue);
+}
