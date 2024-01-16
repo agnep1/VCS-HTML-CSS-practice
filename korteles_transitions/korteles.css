@@ -40,6 +40,7 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  transition: all 1000ms ease-in-out;
 }
 
 .image-border {
@@ -59,8 +60,6 @@ main {
 }
 
 .card:hover {
-  transition: all 1000ms ease-in-out;
-
   border-top-right-radius: 10px;
   position: relative;
   top: -5px;
