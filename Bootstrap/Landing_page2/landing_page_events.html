@@ -17,6 +17,55 @@
       border: 1px black solid;
       font-family: "GeneralSans";
     }
+    :root {
+      --bs-gutter-x: 3rem;
+      --bs-heading-color: #111827;
+      --bs-body-color: #374151;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    ul p {
+      font-size: 14px;
+    }
+    .programs li {
+      height: 56px;
+      width: 56px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+      box-shadow: 4px 12px 24px 0px rgba(28, 44, 64, 0.08);
+    }
+    .programs {
+      gap: 32px;
+    }
+    .btn.btn-primary {
+      font-weight: 600;
+      width: 164px;
+      height: 48px;
+    }
+
+    .line {
+      height: 1px;
+      border: 1px solid white;
+      opacity: 0.1;
+      width: 100%;
+    }
+
+    @media (min-width: 500px) {
+      h1 {
+        font-size: 64px;
+      }
+      p {
+        font-size: 18px;
+      }
+      ul p {
+        font-size: 16px;
+      }
+    }
   </style>
   <body>
     <header>
@@ -36,5 +85,169 @@
         </div>
       </div>
     </header>
+    <main>
+      <div class="container">
+        <div class="left">
+          <h1 class="fw-semibold mt-5 mb-3">Event Registration Reimagined</h1>
+          <p class="mb-4">
+            Manage your event registrations hassle free and without any
+            dependency with the technical team. Isn’t it sounds amazing?
+          </p>
+          <a class="btn btn-primary" role="button" href="#">Get Early Access</a>
+        </div>
+        <div class="right">
+          <img class="col-12 my-5" src="images/mockups.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <h1 class="fw-semibold text-center">All-in-one Event Platform</h1>
+          <p class="text-center">Deliver an exceptional event experience</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <img class="my-4 col-lg-8" src="images/Video.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="p-0">
+          <li class="d-flex my-4">
+            <div><img src="images/Feature Icon.svg" alt="" /></div>
+            <div class="ms-3">
+              <h5 class="fw-semibold">Event Metrics</h5>
+
+              <p>
+                Track your ticket sales, attendees count and more with much
+                ease.
+              </p>
+            </div>
+          </li>
+          <li class="d-flex my-4">
+            <div><img src="images/Feature Icon (1).svg" alt="" /></div>
+            <div class="ms-3">
+              <h5 class="fw-semibold">Registration & Ticketing</h5>
+
+              <p>
+                Manage your Event registrations and ticket sales easier and
+                receive payments instantly.
+              </p>
+            </div>
+          </li>
+          <li class="d-flex my-4">
+            <div><img src="images/Feature Icon (2).svg" alt="" /></div>
+            <div class="ms-3">
+              <h5 class="fw-semibold">Branded Badges</h5>
+
+              <p>
+                Create your custom branded badges for your events and get them
+                printed.
+              </p>
+            </div>
+          </li>
+          <li class="d-flex my-4">
+            <div><img src="images/Feature Icon (3).svg" alt="" /></div>
+            <div class="ms-3">
+              <h5 class="fw-semibold">Oragniser App</h5>
+
+              <p>
+                Manage your events at the palm of your hand with our Oragniser
+                App.
+              </p>
+            </div>
+          </li>
+          <li class="d-flex my-4">
+            <div><img src="images/Feature Icon (4).svg" alt="" /></div>
+            <div class="ms-3">
+              <h5 class="fw-semibold">Attendee Engagement</h5>
+
+              <p>
+                Engage with your attendees via email, surveys and much more.
+              </p>
+            </div>
+          </li>
+          <li class="d-flex my-4">
+            <div><img src="images/Feature Icon (5).svg" alt="" /></div>
+            <div class="ms-3">
+              <h5 class="fw-semibold">Add to Calendar</h5>
+
+              <p>
+                Effortless way to add your events to registered users calendars
+                by 1-click.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <div>
+          <h1 class="fw-semibold text-center">
+            Integrate with your favorite tools
+          </h1>
+          <p class="text-center">
+            Connect RegiM with your most favorite sales and marketing tools
+          </p>
+        </div>
+        <div>
+          <ul
+            class="programs list-unstyled d-flex flex-wrap justify-content-center my-5"
+          >
+            <li>
+              <img src="images/Frame (1).svg" alt="" />
+            </li>
+            <li>
+              <img src="images/Frame (2).svg" alt="" />
+            </li>
+            <li>
+              <img src="images/Frame (3).svg" alt="" />
+            </li>
+            <li>
+              <img src="images/Frame (4).svg" alt="" />
+            </li>
+            <li>
+              <img src="images/Frame (5).svg" alt="" />
+            </li>
+            <li>
+              <img src="images/Frame (6).svg" alt="" />
+            </li>
+            <li>
+              <img src="images/Frame (7).svg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer style="background-color: #111827">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2 class="fw-semibold text-center text-light mt-5">
+            Create your event with RegiM
+          </h2>
+          <p class="text-center mt-3 text-light">
+            Leveraging our virtual and live event experience, Hubilo offers
+            everything you need to set up your next hybrid event from
+            registration to executing a flawless event.
+          </p>
+          <a class="btn btn-primary mt-4 mb-5" role="button" href="#"
+            >Get Early Access</a
+          >
+
+          <div class="d-flex align-items-center my-4">
+            <div class="line"></div>
+            <div class="mx-4"><img src="images/LogomarkB.svg" alt="" /></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <p>© RegiM 2022. Made with love by <span>Landify</span></p>
+          <p>
+            For further details, drop a mail to
+            <span>hello@landify.design</span>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
