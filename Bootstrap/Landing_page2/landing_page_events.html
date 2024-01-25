@@ -21,6 +21,14 @@
       --bs-heading-color: #111827;
       --bs-body-color: #374151;
     }
+    .container-lg {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .row {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
     h1 {
       font-size: 36px;
     }
@@ -45,6 +53,9 @@
       font-weight: 600;
       width: 164px;
       height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .line {
@@ -87,7 +98,7 @@
     <header>
       <div class="container-lg">
         <div
-          class="d-flex justify-content-between align-items-center mt-4 px-0 px-md-2 px-xxl-5"
+          class="d-flex justify-content-between align-items-center mt-4 px-0"
         >
           <div>
             <img src="images/Logomark.svg" alt="" /><img
@@ -137,78 +148,80 @@
         </div>
 
         <div class="row justify-content-center">
-          <img class="my-4 col-lg-8" src="images/Video.svg" alt="" />
+          <img class="my-4 col-lg-8 px-0" src="images/Video.svg" alt="" />
         </div>
       </div>
 
       <div class="container-lg">
-        <ul class="p-0">
-          <li class="d-flex my-4">
-            <div><img src="images/Feature Icon.svg" alt="" /></div>
-            <div class="ms-3">
-              <h5 class="fw-semibold">Event Metrics</h5>
+        <div class="row d-flex flex-wrap col-12 col-md-5 col-lg-3">
+          <ul class="p-0">
+            <li class="d-flex my-4">
+              <div><img src="images/Feature Icon.svg" alt="" /></div>
+              <div class="ms-3">
+                <h5 class="fw-semibold">Event Metrics</h5>
 
-              <p>
-                Track your ticket sales, attendees count and more with much
-                ease.
-              </p>
-            </div>
-          </li>
-          <li class="d-flex my-4">
-            <div><img src="images/Feature Icon (1).svg" alt="" /></div>
-            <div class="ms-3">
-              <h5 class="fw-semibold">Registration & Ticketing</h5>
+                <p>
+                  Track your ticket sales, attendees count and more with much
+                  ease.
+                </p>
+              </div>
+            </li>
+            <li class="d-flex my-4">
+              <div><img src="images/Feature Icon (1).svg" alt="" /></div>
+              <div class="ms-3">
+                <h5 class="fw-semibold">Registration & Ticketing</h5>
 
-              <p>
-                Manage your Event registrations and ticket sales easier and
-                receive payments instantly.
-              </p>
-            </div>
-          </li>
-          <li class="d-flex my-4">
-            <div><img src="images/Feature Icon (2).svg" alt="" /></div>
-            <div class="ms-3">
-              <h5 class="fw-semibold">Branded Badges</h5>
+                <p>
+                  Manage your Event registrations and ticket sales easier and
+                  receive payments instantly.
+                </p>
+              </div>
+            </li>
+            <li class="d-flex my-4">
+              <div><img src="images/Feature Icon (2).svg" alt="" /></div>
+              <div class="ms-3">
+                <h5 class="fw-semibold">Branded Badges</h5>
 
-              <p>
-                Create your custom branded badges for your events and get them
-                printed.
-              </p>
-            </div>
-          </li>
-          <li class="d-flex my-4">
-            <div><img src="images/Feature Icon (3).svg" alt="" /></div>
-            <div class="ms-3">
-              <h5 class="fw-semibold">Oragniser App</h5>
+                <p>
+                  Create your custom branded badges for your events and get them
+                  printed.
+                </p>
+              </div>
+            </li>
+            <li class="d-flex my-4">
+              <div><img src="images/Feature Icon (3).svg" alt="" /></div>
+              <div class="ms-3">
+                <h5 class="fw-semibold">Oragniser App</h5>
 
-              <p>
-                Manage your events at the palm of your hand with our Oragniser
-                App.
-              </p>
-            </div>
-          </li>
-          <li class="d-flex my-4">
-            <div><img src="images/Feature Icon (4).svg" alt="" /></div>
-            <div class="ms-3">
-              <h5 class="fw-semibold">Attendee Engagement</h5>
+                <p>
+                  Manage your events at the palm of your hand with our Oragniser
+                  App.
+                </p>
+              </div>
+            </li>
+            <li class="d-flex my-4">
+              <div><img src="images/Feature Icon (4).svg" alt="" /></div>
+              <div class="ms-3">
+                <h5 class="fw-semibold">Attendee Engagement</h5>
 
-              <p>
-                Engage with your attendees via email, surveys and much more.
-              </p>
-            </div>
-          </li>
-          <li class="d-flex my-4">
-            <div><img src="images/Feature Icon (5).svg" alt="" /></div>
-            <div class="ms-3">
-              <h5 class="fw-semibold">Add to Calendar</h5>
+                <p>
+                  Engage with your attendees via email, surveys and much more.
+                </p>
+              </div>
+            </li>
+            <li class="d-flex my-4">
+              <div><img src="images/Feature Icon (5).svg" alt="" /></div>
+              <div class="ms-3">
+                <h5 class="fw-semibold">Add to Calendar</h5>
 
-              <p>
-                Effortless way to add your events to registered users calendars
-                by 1-click.
-              </p>
-            </div>
-          </li>
-        </ul>
+                <p>
+                  Effortless way to add your events to registered users
+                  calendars by 1-click.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="container-lg">
@@ -255,7 +268,7 @@
           <h2 class="fw-semibold text-center text-light mt-5">
             Create your event with RegiM
           </h2>
-          <p class="text-center mt-3 text-light">
+          <p class="text-center mt-4 px-3 text-light">
             Leveraging our virtual and live event experience, Hubilo offers
             everything you need to set up your next hybrid event from
             registration to executing a flawless event.
